@@ -3,14 +3,19 @@
   --mainFont: "Open Sans", Arial, Helvetica, sans-serif;
   --navFont: "Montserrat", Helvetica, Arial, sans-serif;
   --heroHeaderFont: "Bebas Neue", Helvetica, Arial, sans-serif;
-}
 
-/* colors */
-/* backgroundColors */
+  /* interfaceColors */
+  --greenColor: #1fe8cd;
+  --blueColor: rgba(5, 0, 62);
+  --blueColorTransparent: rgba(5, 0, 62, 0.596);
+  --lineColorMenuMobile: rgba(255, 255, 255, 0.2);
 
-:root {
+  /* font colors */
   --blueFontColor: #05003e;
   --blackFontColor: #000000;
   --whiteFontColor: #ffffff;
   --greyFontColor: #535353;
+
+  /* background colors */
+  --grayBgColor: gray;
 }

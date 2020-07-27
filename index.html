@@ -28,11 +28,61 @@
     />
 
     <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/tools.css" />
+    <link rel="stylesheet" href="./css/pageHeader.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
 
     <script defer src="./script/script.js"></script>
   </head>
   <body>
-    <div class="pageWrapper"></div>
+    <main class="main" id="home">
+      <div class="navigationWrapper">
+        <nav class="navigation">
+          <a href="#home" class="navigation__logo-link"
+            ><img
+              class="navgation__image"
+              src="./img/Rectangle-3-copy.png"
+              alt="pageLogo"
+            />
+          </a>
+          <ul class="navigation__list js-navigationMobile">
+            <li class="navigation__list-item navigation__list-item--back">
+              <span class="navigation__backArrowContainer">
+                <span class="navigation__backArrow">
+                  ‹‹
+                </span>
+              </span>
+              <a
+                class="navigation__list-link navigation__list-link--back"
+                href="#"
+                >Back
+              </a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__list-link" href="#aboutEvent"
+                >About event</a
+              >
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__list-link" href="#peakers">Speakers</a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__list-link" href="#ticket">Ticket</a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__list-link" href="#newsletter">Newsletter</a>
+            </li>
+          </ul>
+          <button
+            class="navigation__hamburger-btn js-navigation__mobile-button"
+          >
+            <span class="buttonImage"></span>
+            <span class="buttonImage"></span>
+            <span class="buttonImage"></span>
+          </button>
+        </nav>
+      </div>
+      <header class="pageHeader"></header>
+    </main>
   </body>
 </html>
