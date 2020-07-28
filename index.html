@@ -29,8 +29,9 @@
 
     <link rel="stylesheet" href="./css/variables.css" />
     <link rel="stylesheet" href="./css/tools.css" />
-    <link rel="stylesheet" href="./css/pageHeader.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/hero.css" />
+    <link rel="stylesheet" href="./css/countdown.css" />
 
     <script defer src="./script/script.js"></script>
   </head>
@@ -82,7 +83,41 @@
           </button>
         </nav>
       </div>
-      <header class="pageHeader"></header>
+      <header class="hero">
+        <h1 class="hero__header">
+          <span class="hero__header--span">10X</span>
+          <span class="hero__header--wrap">business</span>
+          <span class="hero__header--wrap">conference</span>
+        </h1>
+        <span class="hero__header--date">
+          02.20.2020
+        </span>
+        <p class="hero__paragraphs">
+          The Greatest Entrepreneur Party &&nbsp;Conference on the planet.
+        </p>
+        <a href="#" class="hero__button">
+          GET YOUR TICKETS
+        </a>
+        <section class="countdown">
+          <h2 class="countdown__header">
+            EVENT STARTS IN:
+          </h2>
+          <div class="countdownWrapper">
+            <div class="countdownDate">
+              <span class="countdownDate__days">215</span>
+              <span class="countdownDate__hours">2</span>
+              <span class="countdownDate__minuts">50</span>
+              <span class="countdownDate__seconds">7</span>
+            </div>
+            <div class="countdownLabels">
+              <span class="countdownLabels__days">days</span>
+              <span class="countdownLabels__hours">hours</span>
+              <span class="countdownLabels__minuts">min</span>
+              <span class="countdownLabels__seconds">sec</span>
+            </div>
+          </div>
+        </section>
+      </header>
     </main>
   </body>
 </html>

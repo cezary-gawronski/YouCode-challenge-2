@@ -9,4 +9,5 @@ html {
 }
 body {
   background-color: var(--grayBgColor);
+  color: var(--whiteColor);
 }

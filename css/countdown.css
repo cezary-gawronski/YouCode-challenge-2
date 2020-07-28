@@ -1,0 +1,87 @@
+.countdown {
+  position: relative;
+  font-family: var(--mainFont);
+  /* position: absolute;
+  left: 0;
+  right: 0; */
+  bottom: -140px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1140px;
+  margin-top: -80px;
+  padding: 50px;
+  background-color: var(--greenColor);
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .countdown {
+    margin-top: -60px;
+    padding: 20px;
+  }
+}
+
+.countdown__header {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.countdownDate,
+.countdownLabels {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdownDate__days,
+.countdownDate__hours,
+.countdownDate__minuts,
+.countdownDate__seconds,
+.countdownLabels__days,
+.countdownLabels__hours,
+.countdownLabels__minuts,
+.countdownLabels__seconds {
+  width: 100px;
+  margin: 5px 10px;
+}
+
+@media (max-width: 767px) {
+  .countdownDate__days,
+  .countdownDate__hours,
+  .countdownDate__minuts,
+  .countdownDate__seconds,
+  .countdownLabels__days,
+  .countdownLabels__hours,
+  .countdownLabels__minuts,
+  .countdownLabels__seconds {
+    width: 60px;
+    margin: 5px 5px;
+  }
+}
+
+.countdownDate__days,
+.countdownDate__hours,
+.countdownDate__minuts,
+.countdownDate__seconds {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+@media (max-width: 767px) {
+  .countdownDate__days,
+  .countdownDate__hours,
+  .countdownDate__minuts,
+  .countdownDate__seconds {
+    font-size: 36px;
+  }
+}
+
+.countdownLabels__days,
+.countdownLabels__hours,
+.countdownLabels__minuts,
+.countdownLabels__seconds {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
