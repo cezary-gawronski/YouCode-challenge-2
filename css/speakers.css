@@ -1,0 +1,131 @@
+/* #speakers::before {
+  content: "";
+  display: inline-block;
+  height: 75px;
+  margin-top: 0px;
+  /* visibility: hidden; }
+  */
+
+.speakers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 767px) {
+  .speakers {
+    display: unset;
+  }
+}
+
+.speakers__descriptionWrapper {
+  position: relative;
+}
+.speakers__descriptionWrapper--description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: var(--blueColor);
+  padding: 0 20px 0 80px;
+}
+
+@media (max-width: 991px) {
+  .speakers__descriptionWrapper--description {
+    align-items: center;
+    padding: 0 20px;
+  }
+}
+
+.speakers__header {
+  font-family: var(--mainFont);
+  color: var(--greenColor);
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.spekers__description {
+  color: var(--whiteColor);
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 200;
+  text-align: right;
+}
+
+@media (max-width: 991px) {
+  .spekers__description {
+    text-align: center;
+  }
+}
+
+.speakers__link {
+  color: var(--greenColor);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.speakers__images {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+
+.speakers__images::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5, 0, 62, 0.7);
+}
+
+.speakers__images--speaker1 {
+  background-image: url("../img/speaker_1.jpg");
+}
+.speakers__images--speaker2 {
+  background-image: url("../img/speaker_2.jpg");
+}
+.speakers__images--speaker3 {
+  background-image: url("../img/speaker_3.jpg");
+}
+
+.speakers__descriptionWrapper {
+  font-family: var(--mainFont);
+  font-size: 14px;
+  line-height: 36px;
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .speakers__descriptionWrapper {
+    text-align: center;
+  }
+}
+
+.speakres__names,
+.speakres__position {
+  position: relative;
+  line-height: 2;
+  padding: 0 35px;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .speakres__names,
+  .speakres__position {
+    padding: 0 20px;
+  }
+}
+
+.speakres__names {
+  color: var(--greenColor);
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.speakres__position {
+  color: var(--whiteColor);
+  font-size: 12px;
+  margin: 0 0 20px;
+}
