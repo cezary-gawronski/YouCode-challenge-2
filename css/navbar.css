@@ -8,11 +8,6 @@
   z-index: 1;
 }
 
-@media (max-width: 992px) {
-  .navigationWrapper {
-  }
-}
-
 .navigation {
   max-width: 1140px;
   margin: 0 auto;

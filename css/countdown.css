@@ -1,9 +1,6 @@
 .countdown {
   position: relative;
   font-family: var(--mainFont);
-  /* position: absolute;
-  left: 0;
-  right: 0; */
   bottom: -140px;
   margin: 0 auto;
   width: 100%;
@@ -11,6 +8,7 @@
   margin-top: -80px;
   padding: 50px;
   background-color: var(--greenColor);
+  color: var(--whiteColor);
   text-align: center;
 }
 
