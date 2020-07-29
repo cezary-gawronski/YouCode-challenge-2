@@ -22,19 +22,12 @@
     min-height: 100vh;
   }
 }
-/* 
-@media (min-height: 700px) and (orientation: landscape) {
-  .hero {
-    min-height: 105vh;
-  }
-} */
 
 .hero::before {
   content: "";
   position: absolute;
   top: 0;
   bottom: 0;
-
   background-color: rgba(5, 0, 62, 0.7);
 }
 

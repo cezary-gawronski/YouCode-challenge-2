@@ -18,7 +18,6 @@
   content: "About";
   left: 40px;
   position: absolute;
-  display: block;
   color: var(--blueColorTransparent);
   transform: scale(3);
   opacity: 0.1;
