@@ -2,7 +2,7 @@
   position: relative;
   min-height: 80vh;
   padding: 60px 20px 0;
-  background: url(../img/speaker-gary-vee-2c.jpg) center;
+  background: url("img/speaker-gary-vee-2c.jpg") center;
   background-position: top;
   background-size: cover;
   display: flex;
@@ -55,7 +55,7 @@
 }
 
 .hero__header--after::after {
-  content: url(../img/las-vegas-red2.svg);
+  content: url(img/las-vegas-red2.svg);
   position: absolute;
   bottom: -38px;
   right: -50px;
