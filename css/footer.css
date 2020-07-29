@@ -1,0 +1,30 @@
+.footer {
+  padding: 15px 0;
+  font-family: var(--mainFont);
+  color: var(--blueColor);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  box-shadow: inset 0px 0px 12px #ececec;
+}
+
+.footer__description {
+  font-size: 14px;
+}
+.footer_image {
+  display: inline-block;
+  max-height: 40px;
+  height: 100%;
+  margin: 0px 10px;
+  vertical-align: middle;
+}
+.footer__link {
+  text-decoration: none;
+}
+
+@media (max-width: 500px) {
+  .footer_image {
+    display: block;
+    margin: 10px auto;
+  }
+}

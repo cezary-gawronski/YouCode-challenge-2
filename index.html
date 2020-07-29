@@ -35,6 +35,8 @@
     <link rel="stylesheet" href="./css/aboutEven.css" />
     <link rel="stylesheet" href="./css/speakers.css" />
     <link rel="stylesheet" href="./css/ticket.css" />
+    <link rel="stylesheet" href="./css/newsletter.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
 
     <script defer src="./script/script.js"></script>
   </head>
@@ -251,7 +253,53 @@
           </div>
         </div>
       </section>
-      <section class="newsletter" id="#newsletter"></section>
+      <section class="newsletter" id="#newsletter">
+        <div class="formWrapper">
+          <h2 class="newsletter_header">
+            Newsletter
+          </h2>
+          <p class="newsletter__description">
+            Subscribe to the newsletter to receive the latest informations and
+            news about Kallyas Business Conference.
+          </p>
+          <form class="newsletter__form">
+            <label for="emailadress" class="form__label">newsletter</label>
+            <input
+              type="email"
+              class="form__input"
+              id="emailadress"
+              placeholder="your.address@email.com"
+              required
+            />
+            <button class="form__button">
+              Join Us
+            </button>
+          </form>
+        </div>
+      </section>
+      <footer class="footer">
+        <p class="footer__description">
+          Zakodował
+          <a
+            href="https://cezarygawronski.pl"
+            target="_blank"
+            class="footer__link"
+            ><img
+              class="footer_image"
+              src="./public/favicon-96x96.png"
+              alt="logo gawron"
+          /></a>
+          dla
+          <a href="https://youcode.pl/" target="_blank" class="footer__link"
+            ><img
+              class="footer_image"
+              src="./public/ycLogoColor.png"
+              alt="logo youcode.pl"
+            />
+          </a>
+          w ramach „Wyzwania#2”
+        </p>
+      </footer>
     </main>
   </body>
 </html>

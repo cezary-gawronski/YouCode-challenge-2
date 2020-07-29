@@ -1,0 +1,91 @@
+.newsletter {
+  overflow: hidden;
+}
+
+.formWrapper {
+  max-width: 1140px;
+  margin: 0 auto 50px;
+  padding: 100px 20px;
+  font-family: var(--mainFont);
+  color: var(--blueColor);
+  text-align: center;
+}
+
+.newsletter_header {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 26px;
+  margin: 0 0 40px;
+}
+
+.newsletter_header::before {
+  content: "Newsletter";
+  position: absolute;
+  color: var(--blueColorTransparent);
+  transform: scale(3);
+  opacity: 0.1;
+}
+
+.newsletter__description {
+  max-width: 580px;
+  margin: 0 auto 40px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 2;
+}
+
+.formWrapper {
+}
+.newsletter__form {
+  position: relative;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.form__label {
+  position: absolute;
+  visibility: hidden;
+}
+
+.form__input {
+  height: 52px;
+  flex-basis: 440px;
+  margin-right: 10px;
+  border: none;
+  border-top: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  background-color: var(--sectionTicketColor);
+  box-shadow: inset 0px 0px 2px #ececec;
+  transition: padding-left 0.15s ease-out;
+}
+
+.form__input:focus {
+  padding-left: 20px;
+}
+
+.form__button {
+  border: 0;
+  height: 52px;
+  padding: 18px 36px;
+  color: var(--whiteColor);
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: var(--greenColor);
+  cursor: pointer;
+  transition: 0.2s ease-out background-color;
+}
+
+.form__button:hover {
+  background-color: hsl(172, 81%, 38%);
+}

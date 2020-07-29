@@ -65,11 +65,11 @@
 }
 
 .ticketCounter__wrapper {
-  font-family: var(--mainFont);
-  color: var(--whiteColor);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  font-family: var(--mainFont);
+  color: var(--whiteColor);
 }
 
 @media (max-width: 767px) {
