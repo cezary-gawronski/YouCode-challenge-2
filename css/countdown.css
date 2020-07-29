@@ -17,9 +17,14 @@
   }
 }
 
+@media (max-width: 700px) {
+  .countdown {
+    padding: 20px;
+  }
+}
+
 .countdown__header {
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
   font-size: 16px;
 }
 

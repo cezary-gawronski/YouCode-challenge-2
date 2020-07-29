@@ -51,11 +51,17 @@
 }
 
 .ticketCounter__description {
-  margin: 40px 0 20px;
+  margin: 20px 0 10px;
   font-size: 14px;
   line-height: 2;
-  text-align: center;
+  text-align: left;
   color: var(--blueColor);
+}
+
+@media (max-width: 767px) {
+  .ticketCounter__description {
+    text-align: center;
+  }
 }
 
 .ticketCounter__wrapper {
@@ -64,8 +70,14 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
 }
+
+@media (max-width: 767px) {
+  .ticketCounter__wrapper {
+    justify-content: center;
+  }
+}
+
 .ticketCounter__date-wrapper {
   display: flex;
   flex-direction: column;
@@ -134,7 +146,7 @@
 .ticked__card-price {
   color: var(--greenColor);
   font-size: 72px;
-  line-height: 72px;
+  line-height: 0.7;
   font-weight: 700;
   margin: 0;
 }
