@@ -1,17 +1,9 @@
-#aboutEvent::before {
-  content: "";
-  display: block;
-  height: 80px;
-  /* margin-top: 0px; */
-  visibility: hidden;
-}
-
 .aboutEvent {
+  position: relative;
   max-width: 1140px;
   margin: 0 auto;
   font-family: var(--mainFont);
   color: var(--blueColor);
-  margin-top: 60px;
   padding: 0 20px;
 }
 
@@ -40,18 +32,12 @@
   background-color: rgba(5, 0, 62, 0.7);
 }
 
-.aboutEvent__wrapper {
-}
-
 @media (min-width: 767px) {
   .aboutEvent__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
   }
-}
-
-.aboutEvent__wrapper-description {
 }
 
 .aboutEvent__description {

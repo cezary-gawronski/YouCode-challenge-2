@@ -1,21 +1,19 @@
 .countdown {
   position: relative;
-  font-family: var(--mainFont);
-  bottom: -140px;
-  margin: 0 auto;
-  width: 100%;
   max-width: 1140px;
-  margin-top: -80px;
+  width: 90%;
+  margin: 0 auto;
+  top: -75px;
   padding: 50px;
-  background-color: var(--greenColor);
+  font-family: var(--mainFont);
   color: var(--whiteColor);
   text-align: center;
+  background-color: var(--greenColor);
 }
 
-@media (max-width: 992px) {
+@media (min-height: 700px) and (orientation: landscape) {
   .countdown {
-    margin-top: -60px;
-    padding: 20px;
+    top: -70px;
   }
 }
 
