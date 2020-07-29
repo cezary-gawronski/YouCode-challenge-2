@@ -10,7 +10,7 @@
   --blueColor: rgba(5, 0, 62);
   --blueColorTransparent: rgba(5, 0, 62, 0.7);
   --lineColorMenuMobile: rgba(255, 255, 255, 0.2);
-  --sectionTicketColor: #f7f7f7;
+  --lightgratColor: #f7f7f7;
 
   /* font colors */
   --blueFontColor: #05003e;
@@ -18,7 +18,4 @@
   --whiteFontColor: #ffffff;
   --greyFontColor: #535353;
   --lightgreyFontColor: #d4d4d4;
-
-  /* background colors */
-  --grayBgColor: gray;
 }

@@ -62,9 +62,16 @@
   font-size: 14px;
   line-height: 1.5;
   color: #555;
-  background-color: var(--sectionTicketColor);
+  background-color: var(--lightgratColor);
   box-shadow: inset 0px 0px 2px #ececec;
   transition: padding-left 0.15s ease-out;
+}
+
+@media (max-width: 767px) {
+  .form__input {
+    margin: 0 0 15px;
+    flex-basis: 100%;
+  }
 }
 
 .form__input:focus {
@@ -84,6 +91,12 @@
   background-color: var(--greenColor);
   cursor: pointer;
   transition: 0.2s ease-out background-color;
+}
+
+@media (max-width: 767px) {
+  .form__button {
+    width: 100%;
+  }
 }
 
 .form__button:hover {

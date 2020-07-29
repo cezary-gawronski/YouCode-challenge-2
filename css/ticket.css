@@ -1,6 +1,6 @@
 .ticket {
   font-family: var(--mainFont);
-  background-color: var(--sectionTicketColor);
+  background-color: var(--lightgratColor);
   margin-top: -100px;
   padding: 100px 30px 100px;
   color: var(--blueColor);
