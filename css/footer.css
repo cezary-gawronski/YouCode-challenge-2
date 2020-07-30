@@ -18,12 +18,13 @@
   margin: 0px 10px;
   vertical-align: middle;
 }
+
 .footer__link {
   text-decoration: none;
 }
 
 @media (max-width: 500px) {
-  .footer_image {
+  .footer__image {
     display: block;
     margin: 10px auto;
   }
