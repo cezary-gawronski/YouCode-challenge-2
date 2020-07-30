@@ -108,13 +108,13 @@
 }
 
 .speakers__images--speaker1 {
-  background-image: url("img/speaker_1.jpg");
+  background-image: url("../img/speaker_1.jpg");
 }
 .speakers__images--speaker2 {
-  background-image: url("img/speaker_2.jpg");
+  background-image: url("../img/speaker_2.jpg");
 }
 .speakers__images--speaker3 {
-  background-image: url("img/speaker_3.jpg");
+  background-image: url("../img/speaker_3.jpg");
 }
 
 .speakers__descriptionWrapper {
