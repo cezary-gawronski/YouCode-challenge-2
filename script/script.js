@@ -22,7 +22,7 @@
     };
 
     const sectionOneObserver = new IntersectionObserver((
-        entries,
+        entries
     ) => {
         entries.forEach(entry => {
             if (!entry.isIntersecting) {
@@ -36,4 +36,15 @@
 
     sectionOneObserver.observe(pointObserved);
 
-})()
+})();
+
+
+(() => {
+    const target = document.querySelector(".hero");
+    console.log(target);
+    window.addEventListener('scroll', () => {
+        const value = window.scrollY;
+        target.style.backgroundPosition = `0px ${value * -0.3}px`;
+
+    })
+})();
