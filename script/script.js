@@ -41,7 +41,6 @@
 
 (() => {
     const target = document.querySelector(".hero");
-    console.log(target);
     window.addEventListener('scroll', () => {
         const value = window.scrollY;
         target.style.backgroundPosition = `0px ${value * -0.3}px`;
