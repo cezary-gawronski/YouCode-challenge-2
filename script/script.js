@@ -47,3 +47,30 @@
 
     })
 })();
+
+
+(() => {
+    const deadline = new Date("Jan 14, 2022 20:30:25").getTime();
+    const x = setInterval(() => {
+        let nowDate = new Date().getTime();
+        let remainingTime = deadline - nowDate;
+        let days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+
+        document.querySelectorAll('.js-days').forEach(elm => elm.innerHTML = days);
+        document.querySelectorAll('.js-hours').forEach(elm => elm.innerHTML = hours);
+        document.querySelectorAll('.js-minutes').forEach(elm => elm.innerHTML = minutes);
+        document.querySelectorAll('.js-seconds').forEach(elm => elm.innerHTML = seconds);
+
+
+        if (remainingTime < 0) {
+            clearInterval(x);
+            document.querySelectorAll('.js-days').forEach(elm => elm.innerHTML = 0);
+            document.querySelectorAll('.js-hours').forEach(elm => elm.innerHTML = 0);
+            document.querySelectorAll('.js-minutes').forEach(elm => elm.innerHTML = 0);
+            document.querySelectorAll('.js-seconds').forEach(elm => elm.innerHTML = 0);
+        }
+    }, 1000);
+})();
