@@ -43,7 +43,7 @@
     const target = document.querySelector(".hero");
     window.addEventListener('scroll', () => {
         const value = window.scrollY;
-        target.style.backgroundPosition = `0px ${value * -0.3}px`;
+        target.style.backgroundPosition = `50% calc(50% + ${value * -0.3}px)`;
 
     })
 })();
