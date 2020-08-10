@@ -85,9 +85,8 @@
     window.addEventListener('scroll', () => {
 
         const newSize = Math.floor(580 + window.pageYOffset * .3);
-        console.log(newSize);
         targetSpeakers.forEach(e => e.style.backgroundSize = `${newSize}px`);
-        targetSpeakers.forEach(e => e.style.transition = `2s linear`);
+        targetSpeakers.forEach(e => e.style.transition = `.3s ease-in-out tramsition`);
 
 
     })
