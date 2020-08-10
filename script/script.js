@@ -13,15 +13,27 @@
 })();
 
 
-// (() => {
-//     const button = document.querySelector(".js-main-navigation__mobile-button");
-//     const menu = document.querySelector(".js-main-navigation__menu");
+(() => {
+    const navBar = document.querySelector(".navigationWrapper");
+    const pointObserved = document.querySelector(".hero__header");
 
-//     const toggleClass = () => {
-//         menu.classList.toggle("main-navigation__menu--open");
-//     };
+    const pointObservedOptions = {
+        rootMargin: "-370px 0px 0px 0px"
+    };
 
-//     button.addEventListener("click", toggleClass);
-//     menu.addEventListener("click", toggleClass);
+    const sectionOneObserver = new IntersectionObserver((
+        entries,
+    ) => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+                navBar.classList.add("js-navigationWrapperScrolled");
+            } else {
+                navBar.classList.remove("js-navigationWrapperScrolled");
+            }
+        });
+    },
+        pointObservedOptions);
 
-// })()
+    sectionOneObserver.observe(pointObserved);
+
+})()
