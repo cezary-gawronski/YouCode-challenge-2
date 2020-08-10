@@ -74,3 +74,39 @@
         }
     }, 1000);
 })();
+
+
+// Odnoszę wrażenie, że te skrypty bardzo obciążają urządzenia.
+// Animacje nie są płynne :(
+
+(() => {
+    const targetSpeakers = document.querySelectorAll('.js-speakers');
+
+    window.addEventListener('scroll', () => {
+
+        const newSize = Math.floor(580 + window.pageYOffset * .3);
+        console.log(newSize);
+        targetSpeakers.forEach(e => e.style.backgroundSize = `${newSize}px`);
+        targetSpeakers.forEach(e => e.style.transition = `2s linear`);
+
+
+    })
+})();
+
+
+// window.addEventListener('scroll', () => {
+
+//     const targetSpeakers = document.querySelectorAll('.js-speakers');
+
+//     let i = 0, length = targetSpeakers.length;
+
+//     for (i; i < length; i++) {
+//         let newSize = 580 + window.pageYOffset * .3;
+//         targetSpeakers[i].style.backgroundSize = `${newSize}px`;
+
+//     }
+
+// });
+
+
+

@@ -95,7 +95,7 @@
   justify-content: flex-end;
   position: relative;
   min-height: 500px;
-  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
